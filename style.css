@@ -1,0 +1,163 @@
+
+header 
+{
+    padding: 25px;
+    text-align: center;
+    background-color: #75401b;
+    color: #f4f4f4;
+    text-shadow: 1px 1px 2px #f4a125;
+}
+
+
+nav ul
+{
+    background-color: #bf713a;
+    color: #f4f4f4;
+    text-shadow: 1px 1px 2px #f4a125;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+body 
+{
+    background-color: #bf713a;
+}
+
+
+h2 
+{
+    text-align: center;
+    color: #ead3bb;
+    margin: 0 auto;
+}
+
+
+p 
+{
+    display: flex;
+    justify-content: center; /* Meratakan ke tengah secara horizontal */
+    align-items: center;     /* Meratakan ke tengah secara vertikal */
+     text-align: center;
+}
+
+
+form
+{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form label
+{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+form input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+
+form button[type="submit"]
+{
+    background-color: #532a10;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover 
+{
+    background-color: #75401b;
+}
+
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card
+{
+    flex: 1 1 250px;
+    background-color: #dfaf8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    margin: 0;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.card img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.galeri 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) 
+{
+    .galeri {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeri .card {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+}
